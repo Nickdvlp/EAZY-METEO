@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EAZY METEO</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./input.css" rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../icons/eazy-meteo-icon-photoaidcom-cropped.jpg"
+    />
+  </head>
+
+  <body>
+    <div class="Current_location">
+      <i class="bx bx-current-location"></i>
+    </div>
+    <div class="loader"></div>
+
+    <div class="initial_text">Search By City for weather forecast...</div>
+    <main class="main-container">
+      <div class="location-and-date">
+        <img
+          class="logo"
+          src="../icons/eazy-meteo-icon-photoaidcom-cropped.jpg"
+        />
+
+        <div class="search_bar">
+          <input
+            class="search_input"
+            type="text"
+            placeholder="Search By Location"
+          />
+          <button class="search_btn">Search</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Recent</button>
+          <div class="dropdown-content"></div>
+        </div>
+      </div>
+
+      <div class="current-temperature">
+        <div class="current-temperature__icon-container">
+          <div>
+            <h1 class="location-and-date__location header_text"></h1>
+            <div class="header_Date"></div>
+          </div>
+          <img
+            class="main_image"
+            src="../icons/mostly-sunny.svg"
+            class="current-temperature__icon"
+            alt="sun image"
+          />
+        </div>
+        <div class="current-temperature__content-container">
+          <div class="current-temperature__value">21&deg;</div>
+        </div>
+      </div>
+
+      <div class="current-stats">
+        <div>
+          <div class="current-stats__value daily_value_max">23&deg;</div>
+          <div class="current-stats__label">High</div>
+          <div class="current-stats__value daily_value_min">14&deg;</div>
+          <div class="current-stats__label">Low</div>
+        </div>
+        <div>
+          <div class="current-stats__value current_wind_speed">7mph</div>
+          <div class="current-stats__label">Wind</div>
+          <div class="current-stats__value current_rain_stat">0%</div>
+          <div class="current-stats__label">Rain</div>
+        </div>
+        <div>
+          <div class="current-stats__value sunrise_time">05:27</div>
+          <div class="current-stats__label">Sunrise</div>
+          <div class="current-stats__value sunset_time">20:57</div>
+          <div class="current-stats__label">Sunset</div>
+        </div>
+      </div>
+
+      <div class="weather-by-hour">
+        <h2 class="weather-by-hour__heading">Today's weather</h2>
+        <div class="weather-by-hour__container">
+          <div class="weather-by-hour__item">
+            <div class="weather-by-hour__hour"></div>
+            <img class="hourly_img" src="../icons/mostly-sunny.svg" />
+            <div class="hourly_time_str"></div>
+          </div>
+          <div class="weather-by-hour__item">
+            <div class="weather-by-hour__hour"></div>
+            <img class="hourly_img" src="../icons/mostly-sunny.svg" />
+            <div class="hourly_time_str"></div>
+          </div>
+          <div class="weather-by-hour__item">
+            <div class="weather-by-hour__hour"></div>
+            <img class="hourly_img" src="../icons/mostly-sunny.svg" />
+            <div class="hourly_time_str"></div>
+          </div>
+          <div class="weather-by-hour__item">
+            <div class="weather-by-hour__hour"></div>
+            <img class="hourly_img" src="../icons/mostly-sunny.svg" />
+            <div class="hourly_time_str"></div>
+          </div>
+          <div class="weather-by-hour__item">
+            <div class="weather-by-hour__hour"></div>
+            <img class="hourly_img" src="../icons/mostly-sunny.svg" />
+            <div class="hourly_time_str"></div>
+          </div>
+          <div class="weather-by-hour__item">
+            <div class="weather-by-hour__hour"></div>
+            <img class="hourly_img" src="../icons/mostly-sunny.svg" />
+            <div class="hourly_time_str"></div>
+          </div>
+          <div class="weather-by-hour__item">
+            <div class="weather-by-hour__hour"></div>
+            <img class="hourly_img" src="../icons/mostly-sunny.svg" />
+            <div class="hourly_time_str"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="next-5-days">
+        <h2 class="next-5-days__heading">Next 5 days</h2>
+        <div class="next-5-days__container"></div>
+      </div>
+      <div id="demo"></div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
